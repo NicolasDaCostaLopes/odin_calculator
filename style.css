@@ -16,6 +16,8 @@ body {
 }
 .display {
   background-color: rgb(201, 198, 198);
+  align-items: center;
+  justify-content: end;
 }
 .row {
   margin: 5px;
@@ -24,11 +26,27 @@ body {
   height: 60px;
 }
 .row > button {
+  border-radius: 10%;
   min-width: 50px;
   width: 25%;
   flex-grow: 1;
+  font-size: 40px;
 }
 .row > .double {
   min-width: 105px;
   width: calc(50% + 5px);
+}
+.operand {
+  background-color: bisque;
+}
+.operator {
+  background-color: blueviolet;
+}
+.clear,
+.sign,
+.percent {
+  background-color: aquamarine;
+}
+.value {
+  font-size: 3em;
 }
