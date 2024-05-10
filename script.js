@@ -1,6 +1,7 @@
 let first;
 let operator;
 let second;
+const calculator = document.querySelector(".calculator");
 const add = (a, b) => {
     return a + b
 }
@@ -29,3 +30,7 @@ const operate = (a, b, operation) => {
             return divide(a, b);
     }
 }
+const eventHandler = (e) => {
+    console.log(e.target.value);
+}
+calculator.addEventListener("click", eventHandler);
